@@ -16,7 +16,6 @@ pipeline {
         stage('Build') {
             steps {
       	        sh 'docker build -t phpbuild:latest .'
-                }
             }
         }
         stage('Test'){
