@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build') {
             steps {
-      	        sh 'sudo docker build -t phpbuild:latest . -ttn.123@'
+      	        sh 'sudo docker build -t phpbuild:latest .'
             }
         }
         stage('Test'){
