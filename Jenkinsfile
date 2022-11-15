@@ -13,10 +13,9 @@ pipeline {
             }
         }
 
-        stage('Build') { 
-            steps { 
-                script{
-                 app = docker.build("underwater")
+        stage('Build') {
+            steps {
+      	        sh 'docker build -t phpbuild:latest .'
                 }
             }
         }
