@@ -30,6 +30,7 @@ pipeline {
                          sh 'docker tag phpdemo:latest 916123444654.dkr.ecr.us-east-1.amazonaws.com/phpdemo:latest'
                          sh 'docker push 916123444654.dkr.ecr.us-east-1.amazonaws.com/phpdemo:latest'  
                 }
+                }
             }
         }
     }
