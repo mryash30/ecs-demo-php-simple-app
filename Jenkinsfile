@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build') {
             steps {
-      	        sh 'docker build -t phpbuild:latest .'
+      	        sh 'docker build -t phpbuild:${BUILD_NUMBER} .'
             }
         }
         stage('Deploy') {
